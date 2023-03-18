@@ -20,7 +20,7 @@ code {
 }
 
 #homeContainer{
-  background-image: url('https://img.freepik.com/free-vector/simple-blue-curve-background-business_53876-117343.jpg?w=1060&t=st=1679070921~exp=1679071521~hmac=23034f7d97d6a4ade1fc6d3f0fa69f1bf38110a8726adb8c255c0f511bc224ee');
+  background-image: url('./images/homeBack.webp');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -116,7 +116,7 @@ code {
     margin-left: 0;
   }
   #homeContainer{
-    background-image: url('https://img.freepik.com/free-vector/simple-blue-curve-background-business_53876-117343.jpg?w=1060&t=st=1679070921~exp=1679071521~hmac=23034f7d97d6a4ade1fc6d3f0fa69f1bf38110a8726adb8c255c0f511bc224ee');
+    background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
