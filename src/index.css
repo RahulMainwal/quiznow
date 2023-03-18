@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  margin: 0;
+  top: 0;
+  left: 0;
+  padding: 0;
+}
+
+#homeContainer{
+  background-image: url('https://img.freepik.com/free-vector/simple-blue-curve-background-business_53876-117343.jpg?w=1060&t=st=1679070921~exp=1679071521~hmac=23034f7d97d6a4ade1fc6d3f0fa69f1bf38110a8726adb8c255c0f511bc224ee');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+}
+
+#homeContainer .item {
+  flex-basis: 440px;
+  height: 600px;
+  margin: 5px;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+@media screen and (max-width: 1318px) {
+  #homeBackImg {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  #homeBackImg {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  #homeBackImg {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  #homeBackImg {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 982px) {
+  #homeBackImg {
+    width: 450px;
+  }
+  #frontText{
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #homeBackImg {
+    width: 450px;
+  }
+  #frontText{
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #homeBackImg {
+    width: 400px;
+  }
+  #frontText{
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #homeBackImg {
+    width: 350px;
+  }
+  #frontText{
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #homeBackImg {
+    width: 300px;
+  }
+  #frontText{
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #homeBackImg {
+    width: 300px;
+  }
+  #frontText{
+    margin-left: 0;
+  }
+  #homeContainer{
+    background-image: url('https://img.freepik.com/free-vector/simple-blue-curve-background-business_53876-117343.jpg?w=1060&t=st=1679070921~exp=1679071521~hmac=23034f7d97d6a4ade1fc6d3f0fa69f1bf38110a8726adb8c255c0f511bc224ee');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    justify-content: center;
+    margin-top: -10px;
+  }
+  
+  #homeContainer .item {
+    flex-basis: 10px;
+    height: 250px;
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+  }
+}
