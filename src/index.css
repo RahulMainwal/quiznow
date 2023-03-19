@@ -201,3 +201,9 @@ code {
     width: 90%;
   }
 }
+
+@media screen and (max-width: 308px) {
+  #homeBackImg{
+    width: 100%;
+  }
+}
