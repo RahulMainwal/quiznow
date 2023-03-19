@@ -110,7 +110,7 @@ useEffect(() => {
 }, [userResponse, quizData.quiz])
 
     return (
-     <div style={{margin: "20px"}}>
+     <div style={{padding: "20px", backgroundColor: "white",height: "100vh"}}>
         <h2 id="quiz-title" style={{marginLeft: "20px"}}>{quizData.title}</h2>
         <br/>
         {
@@ -146,9 +146,9 @@ useEffect(() => {
           //    {item}
           //  </Button>
             <Space direction="vertical" id="option"  key={item} onClick={() => {changeHandler(item)}}>
-            <Button  type={userResponse.find((x, ind) =>  x.respond === item )&& "primary"} block>
+            <button id="option-btn" style={userResponse.find((x, ind) =>  x.respond === item )&& {backgroundColor: "rgba(60, 124, 228, 0.889)", color: "white"}} block>
               {item}
-            </Button>
+            </button>
           </Space>
         //  </Col>
              ))

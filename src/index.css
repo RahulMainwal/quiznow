@@ -39,9 +39,27 @@ code {
   display: grid;
 }
 
+#quiz-card-container{
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(223, 227, 244);
+}
+
 #option{
   width: 50%;
-  padding: 10px 30px;
+  padding: 5px 10px;
+  /* word-break: break-all; */
+  /* inline-size: 150px; */
+ }
+ 
+ #option-btn{
+  overflow-wrap: break-all;
+  overflow-x: hidden;
+  /* hyphens: manual; */
+  width: 100%;
+  border-color: rgb(233, 233, 233);
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
  }
 
 
@@ -156,9 +174,10 @@ code {
   #option{
    display: block;
    width: 100%;
+   margin-top: 0;
   }
   #quiz-question-container{
-    margin-top: -60px;
+    margin-top: -30px;
     margin-bottom: -30px;
   }
   #quiz-title{
