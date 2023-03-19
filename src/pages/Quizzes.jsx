@@ -8,10 +8,10 @@ export default function Quizzes() {
     return (
         <div style={{ marginTop: "20px", margin: "20px", width: "auto" }}>
             <h2 style={{textAlign: "center"}}>Quizzes</h2>
-            <Row style={{justifyContent: "center"}}  gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+            <Row style={{justifyContent: "center"}}   gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
                 {
                     dummyArr.map((elem, index) => (
-                        <NavLink key={elem.id} to={`/quizzes/${elem.id}`}>
+                        <NavLink key={elem.id} to={`/quizzes/${elem.id}`} id="all-quizes-card">
                             
                         <Col style={{
                             border: "1px solid #d2d2d2",
