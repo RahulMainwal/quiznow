@@ -111,7 +111,7 @@ useEffect(() => {
 
     return (
      <div style={{margin: "20px"}}>
-        <h2>{quizData.title}</h2>
+        <h2 id="quiz-title">{quizData.title}</h2>
         <br/>
         {
             result
@@ -132,12 +132,12 @@ useEffect(() => {
             :
             count!==null
             ?
-            <Card type="inner" title={formateTime(countDown) } extra={<b>{count+1}/{quizData.quiz.length}</b>}>
+            <Card id="quiz-card-container" type="inner" title={formateTime(countDown) } extra={<b>{count+1}/{quizData.quiz.length}</b>}>
             <Card>
-           <h1>Q.{count+1}. {quizData.quiz[count].question}</h1>
+           <h1 id="quiz-question">Q.{count+1}. {quizData.quiz[count].question}</h1>
          </Card>
          <br/><br/>
-         <Row gutter={16}>
+         <Row gutter={16} id="quiz-question-container">
           <br/>
          {
              quizData.quiz[count].otpion.map((item, i) => (
@@ -145,8 +145,8 @@ useEffect(() => {
           //  <Button type={userResponse.find((x, ind) =>  x.respond === item )&& "primary"} key={item} onClick={() => {changeHandler(item)}} style={{width: "43%", margin: "5px 30px", cursor: "pointer", fontSize: "20px", padding: "20px"}}>
           //    {item}
           //  </Button>
-            <Space direction="vertical"  key={item} onClick={() => {changeHandler(item)}} style={{width: "50%", cursor: "pointer", padding: "10px 30px"}}>
-            <Button type={userResponse.find((x, ind) =>  x.respond === item )&& "primary"} block>
+            <Space direction="vertical" id="option"  key={item} onClick={() => {changeHandler(item)}}>
+            <Button  type={userResponse.find((x, ind) =>  x.respond === item )&& "primary"} block>
               {item}
             </Button>
           </Space>
@@ -155,13 +155,13 @@ useEffect(() => {
          }
          </Row>
          <br/><br/>
-         <Card style={{textAlign: "end"}}>
-             <Button danger type="primary">Clear Option</Button>
+         <Card id="action-buttons-card" style={{textAlign: "center"}}>
+             {/* <Button danger type="primary">Clear Option</Button> */}
              &nbsp;&nbsp;&nbsp;
              {
                 count !== 0
                 ?
-                <Button onClick={() => {previousHandler()}}>Previous</Button>
+                <Button danger onClick={() => {previousHandler()}}>Previous</Button>
                 :
                 <Button>No Previous</Button>
              }

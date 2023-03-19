@@ -39,6 +39,12 @@ code {
   display: grid;
 }
 
+#option{
+  width: 50%;
+  padding: 10px 30px;
+ }
+
+
 @media screen and (max-width: 1318px) {
   #homeBackImg {
     width: 700px;
@@ -132,5 +138,33 @@ code {
     justify-content: center;
     align-items: center;
     display: grid;
+  }
+}
+
+
+@media screen and (max-width: 520px) {
+  #quiz-question{
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  #quiz-question{
+    font-size: 15px;
+  }
+  #option{
+   display: block;
+   width: 100%;
+  }
+  #quiz-question-container{
+    margin-top: -60px;
+    margin-bottom: -30px;
+  }
+  #quiz-title{
+    display: none;
+  }
+  #quiz-card-container{
+    margin-top: -30px;
   }
 }
