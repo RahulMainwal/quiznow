@@ -7,7 +7,7 @@ export default function Quizzes() {
 
     return (
         <div style={{ marginTop: "20px", margin: "20px", width: "auto" }}>
-            <div>Quizzes</div>
+            <h2 style={{textAlign: "center"}}>Quizzes</h2>
             <Row style={{justifyContent: "center"}}  gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
                 {
                     dummyArr.map((elem, index) => (

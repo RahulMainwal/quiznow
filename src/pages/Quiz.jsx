@@ -111,7 +111,7 @@ useEffect(() => {
 
     return (
      <div style={{margin: "20px"}}>
-        <h2 id="quiz-title">{quizData.title}</h2>
+        <h2 id="quiz-title" style={{marginLeft: "20px"}}>{quizData.title}</h2>
         <br/>
         {
             result
